@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title | InsightBlog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Same Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Insight<span>Blog</span></a>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="index.html#latest">Latest</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="post-detail">
+        <div class="container">
+            <div class="post-header">
+                <span class="post-category-badge" id="postCategory">Technology</span>
+                <h1 id="postTitle">The Future of Frontend Development in 2025</h1>
+                <div class="post-meta">
+                    <span><i class="far fa-calendar"></i> <span id="postDate">Oct 28, 2025</span></span>
+                    <span><i class="far fa-clock"></i> <span id="postReadTime">6 min read</span></span>
+                    <span><i class="far fa-user"></i> Alex Rivera</span>
+                </div>
+            </div>
+
+            <div class="post-featured-img">
+            <img id="postImage" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200" alt="The Future of Frontend Development">
+            </div>
+
+            <div class="post-body" id="postBody"></div>
+            
+            </div>
+
+            <!-- Social Share -->
+            <div class="share-section">
+                <h4>Share this article</h4>
+              
+<div class="share-buttons">
+    <a href="https://twitter.com/intent/tweet"
+       class="share-btn twitter"
+       target="_blank"
+       rel="noopener noreferrer">
+        X
+    </a>
+
+    <a href="https://www.linkedin.com/sharing/share-offsite/"
+       class="share-btn linkedin"
+       target="_blank"
+       rel="noopener noreferrer">
+        LinkedIn
+    </a>
+
+    <a href="https://www.facebook.com/sharer/sharer.php"
+       class="share-btn facebook"
+       target="_blank"
+       rel="noopener noreferrer">
+        Facebook
+    </a>
+
+    <a href="https://wa.me/"
+       class="share-btn whatsapp"
+       target="_blank"
+       rel="noopener noreferrer">
+        WhatsApp
+    </a>
+</div>
+            </div>
+
+            <!-- Tags -->
+            <div class="post-tags">
+                <span>Tags:</span>
+                <a href="#" class="tag">Frontend</a>
+                <a href="#" class="tag">JavaScript</a>
+                <a href="#" class="tag">Career</a>
+                <a href="#" class="tag">2025</a>
+            </div>
+
+            <!-- Comments -->
+            <section class="comments-section">
+                <h3>Comments (3)</h3>
+                
+                <div class="comment">
+                    <div class="comment-avatar">JR</div>
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <strong>Jordan Lee</strong>
+                            <span>2 days ago</span>
+                        </div>
+                        <p>Great insights! The part about AI collaboration really resonated with me.</p>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-avatar">SK</div>
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <strong>Sarah Kim</strong>
+                            <span>1 day ago</span>
+                        </div>
+                        <p>Would love a follow-up article on the best AI tools for designers.</p>
+                    </div>
+                </div>
+
+                <form class="comment-form">
+                    <h4>Leave a Comment</h4>
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <textarea placeholder="Write your comment..." rows="4" required></textarea>
+                    <button type="submit" class="btn">Post Comment</button>
+                </form>
+            </section>
+
+            <!-- Related Posts -->
+            <section class="related-posts">
+                <h3>Related Articles</h3>
+                <div class="related-grid">
+                    <a href="post.html?id=4" class="related-card">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=250&fit=crop" alt="">
+                        <h4>Mastering CSS Grid in 2025</h4>
+                    </a>
+                    <a href="post.html?id=7" class="related-card">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop" alt="">
+                        <h4>Why Clean Code Still Matters</h4>
+                    </a>
+                    <a href="post.html?id=3" class="related-card">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop" alt="">
+                        <h4>Building Better Developer Habits</h4>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2025 InsightBlog. Built for CodSoft Internship.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+    const params = new URLSearchParams(window.location.search);
+    const postId = params.get("id");
+
+    console.log("Selected Post ID:", postId);
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>

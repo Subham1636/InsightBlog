@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightBlog | Modern Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Insight<span>Blog</span></a>
+            
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search articles...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#latest">Latest</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero / Featured -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">Featured</span>
+                <h1>Discover Stories That Inspire</h1>
+                <p>Explore thoughtful articles on technology, design, lifestyle and more — written for the curious mind.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Blog Posts -->
+                <section class="posts-section">
+                    <div class="section-header">
+                        <h2>Latest Articles</h2>
+                        <div class="filter-tabs" id="filterTabs">
+                            <button class="tab active" data-category="all">All</button>
+                            <button class="tab" data-category="technology">Technology</button>
+                            <button class="tab" data-category="design">Design</button>
+                            <button class="tab" data-category="lifestyle">Lifestyle</button>
+                            <button class="tab" data-category="productivity">Productivity</button>
+                        </div>
+                    </div>
+
+                    <div class="posts-grid" id="postsGrid">
+                        <!-- Posts will be injected by JS -->
+                    </div>
+
+                    <div class="load-more-wrapper">
+                        <button class="btn load-more" id="loadMoreBtn">Load More Articles</button>
+                    </div>
+                </section>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <ul class="category-list" id="categoryList">
+                           <li><a href="#" data-category="technology">Technology <span id="technologyCount">3</span></a></li>
+<li><a href="#" data-category="design">Design <span id="designCount">2</span></a></li>
+<li><a href="#" data-category="lifestyle">Lifestyle <span id="lifestyleCount">2</span></a></li>
+<li><a href="#" data-category="productivity">Productivity <span id="productivityCount">1</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>Popular Tags</h3>
+                        <div class="tags">
+                           
+<a href="#" class="tag" data-tag="web-dev">Web Dev</a>
+<a href="#" class="tag" data-tag="ui-ux">UI/UX</a>
+<a href="#" class="tag" data-tag="javascript">JavaScript</a>
+<a href="#" class="tag" data-tag="minimalism">Minimalism</a>
+<a href="#" class="tag" data-tag="career">Career</a>
+<a href="#" class="tag" data-tag="tools">Tools</a>
+<a href="#" class="tag" data-tag="inspiration">Inspiration</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget about-widget" id="about">
+                        <h3>About InsightBlog</h3>
+                        <p>A modern space for thoughtful writing on technology, design, and the art of living well.</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Insight<span>Blog</span></a>
+                    <p>Stories that inform, inspire and elevate.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#about">About</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        
+<a href="https://www.linkedin.com/in/subham-singh-3b4a10376/"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://github.com/Subham1636"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="GitHub">
+    <i class="fab fa-github"></i>
+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                
+<p>© 2026 InsightBlog. Built with ❤️ by Subham Singh | CodSoft Internship</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
